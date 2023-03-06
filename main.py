@@ -69,10 +69,21 @@ else:
   colors.error("Invalid Token.")
   sys.exit()
 
+def sort_(file, item):
+  with open(file, "r") as f:
+    beamed = f.read().split("\n")
+    try:
+      beamed.remove("")
+    except:
+      pass
+  return item in beamed
 
 def save(file, data):
   with open(file, "a+") as f:
-    f.write(data+"\n")
+    if not sort_(file, data):
+      f.write(data+"\n")
+    else:
+      colors.warning(f"Duplicate Found -> {data}")
 
 async def check(promocode):
   async with aiohttp.ClientSession(headers=auth) as cs:

@@ -5,6 +5,11 @@ Discord Promotion Links Checker
 - No Ratelimit
 - Fast Speed
 - Saves Valid Links In File
+- Sorts Duplicate Links
+
+# Replit
+
+Troubleshooting Cloning Git At Replit? Here Is Fork Link [Click Here](https://replit.com/@authdaddy/Discord-Promotion-Checker#main.py)
 
 # Requirements
 

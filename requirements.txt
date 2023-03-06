@@ -1,0 +1,5 @@
+aiohttp
+python-dateutil
+tasksio
+colorama
+pyfiglet
